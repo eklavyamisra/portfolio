@@ -424,6 +424,26 @@ section { position: relative; padding: clamp(80px, 12vw, 180px) var(--gutter); }
 .art-sundown .sundown__word { position: relative; font-size: clamp(56px, 7vw, 120px); color: #111; letter-spacing: -0.03em; }
 .card:hover .art-sundown .sundown__word { transform: scale(1.08) rotate(-3deg); }
 
+/* card art: unsplash */
+.art-unsplash { background: #f4f4f2; display: grid; place-items: center; }
+.art-unsplash .masonry { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 8px; }
+.art-unsplash .masonry__col { display: flex; flex-direction: column; gap: 8px; transition: transform 1s var(--ease-out); }
+.art-unsplash .masonry__col:nth-child(2) { margin-top: -18%; }
+.art-unsplash .masonry i { display: block; border-radius: 8px; flex-shrink: 0; }
+.art-unsplash .masonry__col:nth-child(1) i:nth-child(1) { height: 42%; background: linear-gradient(160deg, #9bb7c9, #3e5a6e); }
+.art-unsplash .masonry__col:nth-child(1) i:nth-child(2) { height: 30%; background: linear-gradient(160deg, #e8c39e, #b0683c); }
+.art-unsplash .masonry__col:nth-child(1) i:nth-child(3) { height: 40%; background: linear-gradient(160deg, #a7c4a0, #45623f); }
+.art-unsplash .masonry__col:nth-child(2) i:nth-child(1) { height: 34%; background: linear-gradient(160deg, #2b2d42, #8d99ae); }
+.art-unsplash .masonry__col:nth-child(2) i:nth-child(2) { height: 46%; background: linear-gradient(160deg, #f6d6c8, #d9826b); }
+.art-unsplash .masonry__col:nth-child(2) i:nth-child(3) { height: 36%; background: linear-gradient(160deg, #cdd7e1, #6c7f93); }
+.art-unsplash .masonry__col:nth-child(3) i:nth-child(1) { height: 28%; background: linear-gradient(160deg, #d8d2c4, #7d7462); }
+.art-unsplash .masonry__col:nth-child(3) i:nth-child(2) { height: 44%; background: linear-gradient(160deg, #1f3b2d, #6f9c7d); }
+.art-unsplash .masonry__col:nth-child(3) i:nth-child(3) { height: 38%; background: linear-gradient(160deg, #f2e2b3, #c9a14a); }
+.art-unsplash .unsplash__word { position: relative; font-family: var(--f-display); font-weight: 800; font-size: clamp(40px, 5vw, 84px); letter-spacing: -0.04em; color: #111; background: #fff; padding: .1em .35em; border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,.18); }
+.card:hover .art-unsplash .masonry__col:nth-child(odd) { transform: translateY(-10%); }
+.card:hover .art-unsplash .masonry__col:nth-child(2) { transform: translateY(10%); }
+.card:hover .art-unsplash .unsplash__word { transform: scale(1.06); }
+
 /* ---------- experience ---------- */
 .exp .h2 { margin-bottom: clamp(48px, 6vw, 96px); }
 .exp__list { border-top: 1px solid var(--line); }
