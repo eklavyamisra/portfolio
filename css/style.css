@@ -558,7 +558,9 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
   .nav__burger { display: block; }
   .nav__status { justify-self: center; font-size: 10px; }
 
-  .hero__meta { font-size: 10px; }
+  .hero { min-height: 0; padding-top: 110px; }
+  .hero__meta { font-size: 10px; margin-bottom: 0; padding-top: 0; }
+  .hero__title { margin: 48px 0 32px -0.04em; }
   .hero__bottom { grid-template-columns: 1fr; }
   .hero .btn-circle { width: 100px; height: 100px; justify-self: end; margin-top: -20px; }
 
