@@ -247,6 +247,16 @@
         onUpdate: (self) => gsap.set('.work__progress i', { scaleX: self.progress }),
       },
     });
+
+    // Recalculate the scroll distance whenever the cards change size (fonts, CSS reloads, etc.)
+    let lastWidth = workTrack.scrollWidth;
+    const ro = new ResizeObserver(() => {
+      if (workTrack.scrollWidth === lastWidth) return;
+      lastWidth = workTrack.scrollWidth;
+      ScrollTrigger.refresh();
+    });
+    ro.observe(workTrack);
+    return () => ro.disconnect();
   });
 
   /* ---------- footer ---------- */
