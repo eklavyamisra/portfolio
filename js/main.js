@@ -86,10 +86,10 @@
   const intro = gsap.timeline({ delay: 0.2 });
   intro
     .to(counter, {
-      v: 100, duration: 2, ease: 'power3.inOut',
+      v: 100, duration: 1.2, ease: 'power3.inOut',
       onUpdate: () => { num.textContent = Math.round(counter.v); },
     })
-    .to('.loader__bar i', { scaleX: 1, duration: 2, ease: 'power3.inOut' }, 0)
+    .to('.loader__bar i', { scaleX: 1, duration: 1.2, ease: 'power3.inOut' }, 0)
     .to('.loader__count', { yPercent: -30, opacity: 0, duration: 0.6, ease: 'power3.in' })
     .fromTo('.loader', { clipPath: 'inset(0% 0% 0% 0%)' }, {
       clipPath: 'inset(0% 0% 100% 0%)', duration: 1.1, ease: 'expo.inOut',
@@ -316,15 +316,13 @@
       e.preventDefault();
       const picked = (g) => qsa(`[data-group="${g}"] .is-on`, form).map((c) => c.textContent);
       const types = picked('type');
-      const time = picked('time')[0] || 'Not sure yet';
       const name = qs('[name="name"]', form).value.trim();
       const msg = qs('[name="msg"]', form).value.trim();
-      const subject = `Project inquiry: ${types.join(', ') || 'New project'}`;
+      const subject = `Quote request: ${types.join(', ') || 'New project'}`;
       const body = [
         'Hi Eklavya,', '',
         name ? `Name: ${name}` : null,
-        `Looking for: ${types.join(', ') || '-'}`,
-        `Timeline: ${time}`, '',
+        `Looking for: ${types.join(', ') || '-'}`, '',
         msg || '(Project details)',
       ].filter((l) => l !== null).join('\n');
       window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

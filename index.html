@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Eklavya Mishra — Full-Stack Developer</title>
-  <meta name="description" content="Eklavya Mishra is a full-stack MERN developer from Jodhpur, India, building fast, animated and AI-powered web products for startups and brands. Available for freelance." />
+  <meta name="description" content="Eklavya Mishra is a full-stack MERN developer from Jodhpur, India, building fast websites and web apps that win customers for startups and brands. Free quote, reply within 24h." />
   <meta name="theme-color" content="#0b0b0a" />
   <meta property="og:title" content="Eklavya Mishra — Full-Stack Developer" />
   <meta property="og:description" content="Fast, animated, AI-powered web products. MERN · Motion · AI. Available for freelance." />
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -45,9 +45,9 @@
     <nav class="nav__links" aria-label="Primary">
       <a href="#work" class="link-roll"><span data-text="Work">Work</span></a>
       <a href="#services" class="link-roll"><span data-text="Services">Services</span></a>
-      <a href="#about" class="link-roll"><span data-text="About">About</span></a>
-      <a href="#contact" class="link-roll"><span data-text="Contact">Contact</span></a>
+      <a href="#about" class="link-roll"><span data-text="Why me">Why me</span></a>
     </nav>
+    <a href="#contact" class="nav__cta mono">Get a free quote</a>
     <a href="#work" class="nav__work mono">Work</a>
     <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
@@ -56,8 +56,8 @@
     <nav class="menu__links">
       <a href="#work"><span class="mono">01</span>Work</a>
       <a href="#services"><span class="mono">02</span>Services</a>
-      <a href="#about"><span class="mono">03</span>About</a>
-      <a href="#contact"><span class="mono">04</span>Contact</a>
+      <a href="#about"><span class="mono">03</span>Why me</a>
+      <a href="#contact"><span class="mono">04</span>Get a quote</a>
     </nav>
     <div class="menu__foot mono">
       <a href="mailto:eklavyamisra2@gmail.com">eklavyamisra2@gmail.com</a>
@@ -84,12 +84,14 @@
       </h1>
 
       <div class="hero__bottom">
-        <p class="hero__lede" data-fade>
-          I design &amp; build <em class="serif">fast, animated,</em> AI-powered web products,
-          from the first sketch to production.
-        </p>
-        <a href="#contact" class="btn-circle" data-magnetic data-cursor="Hire">
-          <span>Start a<br />project</span>
+        <div>
+          <h2 class="hero__lede" data-fade>
+            Websites &amp; web apps that load fast, look sharp and <em class="serif">win you customers.</em>
+          </h2>
+          <p class="hero__sub mono" data-fade>Free quote · Reply within 24h · Sketch to launch</p>
+        </div>
+        <a href="#contact" class="btn-circle" data-magnetic data-cursor="Quote">
+          <span>Get a free<br />quote</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
         </a>
         <div class="hero__scroll mono" data-fade>
@@ -110,39 +112,10 @@
       </div>
     </section>
 
-    <!-- ============ INTRO / ABOUT ============ -->
-    <section class="intro" id="about">
-      <div class="label mono"><span>( 01 )</span> About</div>
-      <p class="intro__text" data-scrub-words>
-        I'm Eklavya, a full-stack developer who turns ideas into products people actually enjoy using.
-        I work across the whole stack, from React interfaces with motion to Node APIs, auth, databases
-        and AI features, so you get one person who owns the whole build and ships.
-      </p>
-
-      <div class="intro__grid">
-        <div class="intro__stat" data-reveal>
-          <span class="intro__num">02</span>
-          <span class="mono">Product teams shipped with: Vayustaq &amp; MirrorERP</span>
-        </div>
-        <div class="intro__stat" data-reveal>
-          <span class="intro__num">06</span>
-          <span class="mono">Featured builds, from AI search to 3D web</span>
-        </div>
-        <div class="intro__stat" data-reveal>
-          <span class="intro__num">∞</span>
-          <span class="mono">Obsession with performance &amp; detail</span>
-        </div>
-        <div class="intro__stat" data-reveal>
-          <span class="intro__num">24h</span>
-          <span class="mono">Typical reply time to new project inquiries</span>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ SERVICES ============ -->
     <section class="services" id="services">
       <div class="services__head">
-        <div class="label mono"><span>( 02 )</span> Services</div>
+        <div class="label mono"><span>( 01 )</span> Services</div>
         <h2 class="h2" data-split-lines>What I can<br /><em class="serif">build for you</em></h2>
       </div>
 
@@ -174,18 +147,91 @@
       </ul>
     </section>
 
+    <!-- ============ WHY ============ -->
+    <section class="intro" id="about">
+      <div class="label mono"><span>( 02 )</span> Why work with me</div>
+      <p class="intro__text" data-scrub-words>
+        I'm Eklavya, a full-stack developer who turns ideas into products people actually enjoy using.
+        One person owns your whole build, from React interfaces with motion to Node APIs, auth, databases
+        and AI features, so nothing gets lost between handoffs and it ships.
+      </p>
+
+      <div class="intro__grid">
+        <div class="intro__stat" data-reveal>
+          <span class="intro__num">02</span>
+          <span class="mono">Product teams shipped with: Vayustaq &amp; MirrorERP</span>
+        </div>
+        <div class="intro__stat" data-reveal>
+          <span class="intro__num">04</span>
+          <span class="mono">Featured builds, from AI search to 3D web</span>
+        </div>
+        <div class="intro__stat" data-reveal>
+          <span class="intro__num">01</span>
+          <span class="mono">Developer for design, frontend, backend &amp; AI</span>
+        </div>
+        <div class="intro__stat" data-reveal>
+          <span class="intro__num">24h</span>
+          <span class="mono">Typical reply time to new project inquiries</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES ============ -->
+    <section class="exp" id="results">
+      <div class="label mono"><span>( 03 )</span> Case studies</div>
+      <h2 class="h2" data-split-lines>Real products,<br /><em class="serif">real launches</em></h2>
+
+      <div class="exp__list">
+        <div class="exp__row" data-reveal>
+          <span class="mono exp__date">Jul 2026 — Now</span>
+          <div>
+            <h3>Vayustaq <em class="serif">Startup</em></h3>
+            <dl class="case">
+              <div><dt class="mono">Challenge</dt><dd>An early-stage startup needed its whole platform built from zero.</dd></div>
+              <div><dt class="mono">What I did</dt><dd>Designed the architecture and built the frontend, backend, APIs, auth and data workflows.</dd></div>
+              <div><dt class="mono">Result</dt><dd>Live in production at <a href="https://www.vayustaq.com" target="_blank" rel="noopener">vayustaq.com</a>, on a codebase built to stay fast and maintainable.</dd></div>
+            </dl>
+          </div>
+          <span class="mono exp__role">Full-Stack Developer</span>
+        </div>
+        <div class="exp__row" data-reveal>
+          <span class="mono exp__date">May 2026 — Jul 2026</span>
+          <div>
+            <h3>Mirror<em class="serif">ERP</em></h3>
+            <dl class="case">
+              <div><dt class="mono">Challenge</dt><dd>An ERP product needed new features shipped without breaking existing workflows.</dd></div>
+              <div><dt class="mono">What I did</dt><dd>Built application features, backend services, API integrations and responsive interfaces.</dd></div>
+              <div><dt class="mono">Result</dt><dd>Features shipped to production, with cleaner data handling across workflows.</dd></div>
+            </dl>
+          </div>
+          <span class="mono exp__role">Full-Stack Developer</span>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <figure class="quote" data-reveal>
+          <blockquote>"Eklavya built our website and automated the copy-paste work our team used to do by hand every day. He understood the problem quickly and delivered exactly what we needed."</blockquote>
+          <figcaption class="mono">Satish Sankhla, Business owner</figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <blockquote>"Our salon finally has a website that matches the quality of our work. It looks great on phones, and clients can easily see our services and get in touch."</blockquote>
+          <figcaption class="mono">Danesh, Salon owner</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <!-- ============ WORK (horizontal) ============ -->
     <section class="work" id="work">
       <div class="work__pin">
         <div class="work__head">
-          <div class="label mono"><span>( 03 )</span> Selected work</div>
+          <div class="label mono"><span>( 04 )</span> Selected work</div>
           <div class="work__progress" aria-hidden="true"><i></i></div>
         </div>
 
         <div class="work__track">
           <div class="work__intro">
-            <h2 class="h2">Selected<br /><em class="serif">work</em> <sup class="mono">(06)</sup></h2>
-            <p>Products, clones and experiments, each one built to sharpen a part of the craft: architecture, AI, social features and motion.</p>
+            <h2 class="h2">Selected<br /><em class="serif">work</em> <sup class="mono">(04)</sup></h2>
+            <p>Products, AI tools and experiments, each one built to sharpen a part of the craft: architecture, AI and motion. <a href="https://github.com/eklavyamisra" target="_blank" rel="noopener" class="work__gh">More on GitHub ↗</a></p>
           </div>
 
           <!-- 1 -->
@@ -225,22 +271,6 @@
 
           <!-- 3 -->
           <article class="card" data-cursor="View">
-            <a href="https://github.com/eklavyamisra/insta_clone" target="_blank" rel="noopener" class="card__link" aria-label="Instagram Clone">
-              <div class="card__art art-grid">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-                <span class="heart">♥</span>
-              </div>
-              <div class="card__info">
-                <span class="mono">03 / Social · MERN</span>
-                <h3>Instagram Clone</h3>
-                <p>Full-stack social app with auth, profiles, posts, likes and comments over a REST API.</p>
-                <ul class="tags"><li>MongoDB</li><li>Express</li><li>React</li><li>Node</li></ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- 4 -->
-          <article class="card" data-cursor="View">
             <a href="https://eklavyamisra.github.io/cyberfiction/" target="_blank" rel="noopener" class="card__link" aria-label="CyberFiction">
               <div class="card__art art-cyber">
                 <div class="floor"></div>
@@ -248,7 +278,7 @@
                 <span class="cyber__word">CYBER<br />FICTION</span>
               </div>
               <div class="card__info">
-                <span class="mono">04 / 3D · Motion</span>
+                <span class="mono">03 / 3D · Motion</span>
                 <h3>CyberFiction</h3>
                 <p>A 3D animated scroll experience with interactive visuals and frame-driven animation.</p>
                 <ul class="tags"><li>JavaScript</li><li>Canvas</li><li>GSAP</li></ul>
@@ -256,23 +286,7 @@
             </a>
           </article>
 
-          <!-- 5 -->
-          <article class="card" data-cursor="View">
-            <a href="https://eklavyamisra.github.io/sundown-clone/" target="_blank" rel="noopener" class="card__link" aria-label="Sundown Studio Clone">
-              <div class="card__art art-sundown">
-                <div class="blob b1"></div><div class="blob b2"></div>
-                <span class="sundown__word serif">Sundown</span>
-              </div>
-              <div class="card__info">
-                <span class="mono">05 / Studio site</span>
-                <h3>Sundown Studio</h3>
-                <p>Recreation of an award-style studio site with responsive layouts and fluid interactions.</p>
-                <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- 6 -->
+          <!-- 4 -->
           <article class="card" data-cursor="View">
             <a href="https://eklavyamisra.github.io/Aperture/" target="_blank" rel="noopener" class="card__link" aria-label="Aperture">
               <div class="card__art art-unsplash">
@@ -284,7 +298,7 @@
                 <span class="unsplash__word">Aperture</span>
               </div>
               <div class="card__info">
-                <span class="mono">06 / Photo gallery</span>
+                <span class="mono">04 / Photo gallery</span>
                 <h3>Aperture</h3>
                 <p>Photo discovery app with search and a responsive masonry grid, powered by the Unsplash API.</p>
                 <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Unsplash API</li></ul>
@@ -293,8 +307,9 @@
           </article>
 
           <div class="work__end">
-            <a href="https://github.com/eklavyamisra" target="_blank" rel="noopener" class="btn-circle btn-circle--lg" data-magnetic data-cursor="Open">
-              <span>More on<br />GitHub</span>
+            <p class="work__end-q">Want one<br />like these?</p>
+            <a href="#contact" class="btn-circle btn-circle--lg" data-magnetic data-cursor="Quote">
+              <span>Get a free<br />quote</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
             </a>
           </div>
@@ -302,42 +317,9 @@
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="exp">
-      <div class="label mono"><span>( 04 )</span> Experience</div>
-      <h2 class="h2" data-split-lines>Where I've been<br /><em class="serif">shipping</em></h2>
-
-      <div class="exp__list">
-        <div class="exp__row" data-reveal>
-          <span class="mono exp__date">Jul 2026 — Now</span>
-          <div>
-            <h3>Vayustaq <em class="serif">Startup</em></h3>
-            <p>Building the platform end-to-end: architecture, frontend, backend, APIs, authentication and data workflows, with a focus on performance and maintainability.</p>
-          </div>
-          <span class="mono exp__role">Full-Stack Developer</span>
-        </div>
-        <div class="exp__row" data-reveal>
-          <span class="mono exp__date">May 2026 — Jul 2026</span>
-          <div>
-            <h3>Mirror<em class="serif">ERP</em></h3>
-            <p>Shipped application features, backend services and API integrations. Built responsive interfaces and improved data handling across workflows.</p>
-          </div>
-          <span class="mono exp__role">Full-Stack Developer</span>
-        </div>
-        <div class="exp__row" data-reveal>
-          <span class="mono exp__date">2025</span>
-          <div>
-            <h3>BCA <em class="serif">Graduate</em></h3>
-            <p>Bachelor of Computer Applications, Jodhpur, Rajasthan.</p>
-          </div>
-          <span class="mono exp__role">Education</span>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ PROCESS ============ -->
     <section class="process">
-      <div class="label mono"><span>( 05 )</span> Process</div>
+      <div class="label mono"><span>( 05 )</span> How it works</div>
       <div class="process__grid">
         <div class="step" data-reveal>
           <span class="step__n serif">i.</span>
@@ -362,25 +344,14 @@
       </div>
     </section>
 
-    <!-- ============ STACK ============ -->
-    <section class="stack">
-      <div class="label mono"><span>( 06 )</span> Toolkit</div>
-      <div class="stack__cloud">
-        <span data-reveal>React.js</span><span data-reveal>Node.js</span><span data-reveal>Express</span>
-        <span data-reveal>MongoDB</span><span data-reveal>Redux</span><span data-reveal>Tailwind CSS</span>
-        <span data-reveal>JavaScript</span><span data-reveal>REST APIs</span><span data-reveal>JWT Auth</span>
-        <span data-reveal>Generative AI</span><span data-reveal>GSAP</span><span data-reveal>Git &amp; GitHub</span>
-        <span data-reveal>Postman</span><span data-reveal>SheetDB</span><span data-reveal>HTML5 / CSS3</span>
-      </div>
-    </section>
-
     <!-- ============ CONTACT ============ -->
     <section class="contact" id="contact">
-      <div class="label mono"><span>( 07 )</span> Contact</div>
+      <div class="label mono"><span>( 06 )</span> Get a quote</div>
       <h2 class="contact__title">
-        <span class="contact__line" data-split-chars>Let's build</span>
-        <span class="contact__line"><em class="serif">something</em> <span data-split-chars>great</span></span>
+        <span class="contact__line" data-split-chars>Get a free</span>
+        <span class="contact__line"><em class="serif">quote</em> <span data-split-chars>in 24h</span></span>
       </h2>
+      <p class="contact__sub">Tell me what you need. I'll reply within 24 hours with a plan, a timeline and a price. No commitment.</p>
 
       <form class="brief" autocomplete="off">
         <p class="brief__q mono">I need help with (pick any)</p>
@@ -391,31 +362,25 @@
           <button type="button" class="chip">Backend / API</button>
           <button type="button" class="chip">Redesign</button>
         </div>
-        <p class="brief__q mono">Timeline</p>
-        <div class="chips" data-group="time" data-single>
-          <button type="button" class="chip">ASAP</button>
-          <button type="button" class="chip">2–4 weeks</button>
-          <button type="button" class="chip">1–3 months</button>
-          <button type="button" class="chip">Flexible</button>
-        </div>
         <div class="brief__row">
           <input class="brief__input" name="name" type="text" placeholder="Your name" aria-label="Your name" />
           <input class="brief__input" name="msg" type="text" placeholder="Tell me about your project" aria-label="Project details" />
         </div>
         <button type="submit" class="btn-pill" data-magnetic>
-          <span>Send brief</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+          <span>Get my free quote</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
         </button>
       </form>
 
       <div class="contact__links">
-        <button class="contact__email" data-copy="eklavyamisra2@gmail.com" data-cursor="Copy">
-          <span class="contact__email-text">eklavyamisra2@gmail.com</span>
-          <span class="contact__copied mono">Copied ✓</span>
-        </button>
+        <div>
+          <p class="contact__direct mono">Prefer to reach out directly?</p>
+          <button class="contact__email" data-copy="eklavyamisra2@gmail.com" data-cursor="Copy">
+            <span class="contact__email-text">eklavyamisra2@gmail.com</span>
+            <span class="contact__copied mono">Copied ✓</span>
+          </button>
+        </div>
         <div class="contact__socials">
-          <a href="https://github.com/eklavyamisra" target="_blank" rel="noopener" class="link-roll"><span data-text="GitHub ↗">GitHub ↗</span></a>
           <a href="https://wa.me/919057582885" target="_blank" rel="noopener" class="link-roll"><span data-text="WhatsApp ↗">WhatsApp ↗</span></a>
-          <a href="mailto:eklavyamisra2@gmail.com" class="link-roll"><span data-text="Email ↗">Email ↗</span></a>
         </div>
       </div>
     </section>
@@ -427,7 +392,7 @@
     <div class="footer__row mono">
       <span>© 2026 Eklavya Mishra</span>
       <span>Local time <span class="js-time">--:--</span> IST</span>
-      <span>Designed &amp; built by hand</span>
+      <a href="https://github.com/eklavyamisra" target="_blank" rel="noopener" class="link-roll"><span data-text="GitHub ↗">GitHub ↗</span></a>
       <a href="#top" class="link-roll" data-magnetic><span data-text="Back to top ↑">Back to top ↑</span></a>
     </div>
   </footer>
@@ -435,6 +400,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
