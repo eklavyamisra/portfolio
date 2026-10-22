@@ -324,6 +324,9 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 .stack__list { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
 .stack__list li { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); transition: background .3s, color .3s, border-color .3s; }
 .stack__list li:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.stack__label { font-size: 12px; font-weight: 400; }
+.stack--ink { border-top-color: var(--ink-line); }
+.stack--ink .stack__list li { border-color: var(--ink-line); color: var(--ink); }
 .intro { padding-bottom: clamp(40px, 5vw, 72px); }
 .intro + .exp { padding-top: clamp(40px, 5vw, 72px); }
 
