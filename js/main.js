@@ -5,7 +5,7 @@
   const root = document.documentElement;
   const qs = (s, el = document) => el.querySelector(s);
   const qsa = (s, el = document) => [...el.querySelectorAll(s)];
-  const EMAIL = 'eklavyamisra2@gmail.com';
+  const EMAIL = 'eklavyamishra@turningwave.in';
   const WHATSAPP = '919057582885';
 
   /* ---------- things that work without GSAP ---------- */
