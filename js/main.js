@@ -1,14 +1,14 @@
 /* =========================================================
-   Eklavya Mishra — Portfolio interactions
+   Turning Wave — site interactions
    ========================================================= */
 (() => {
   const root = document.documentElement;
   const qs = (s, el = document) => el.querySelector(s);
   const qsa = (s, el = document) => [...el.querySelectorAll(s)];
   const EMAIL = 'eklavyamisra2@gmail.com';
+  const WHATSAPP = '919057582885';
 
   /* ---------- things that work without GSAP ---------- */
-  initClock();
   initMenu();
   initBrief();
   initCopy();
@@ -271,17 +271,6 @@
   /* =========================================================
      helpers
      ========================================================= */
-  function initClock() {
-    const els = qsa('.js-time');
-    if (!els.length) return;
-    const fmt = new Intl.DateTimeFormat('en-GB', {
-      hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata',
-    });
-    const tick = () => { const t = fmt.format(new Date()); els.forEach((el) => (el.textContent = t)); };
-    tick();
-    setInterval(tick, 15000);
-  }
-
   function initMenu() {
     const btn = qs('.nav__burger');
     const menu = qs('.menu');
@@ -312,6 +301,13 @@
         });
       });
     });
+    qsa('[data-package]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const chip = qs(`.chip[data-chip="${btn.dataset.chip}"]`, form);
+        if (chip) chip.classList.add('is-on');
+        qs('[name="msg"]', form).value = `Interested in the ${btn.dataset.package} package. `;
+      });
+    });
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const picked = (g) => qsa(`[data-group="${g}"] .is-on`, form).map((c) => c.textContent);
@@ -320,12 +316,16 @@
       const msg = qs('[name="msg"]', form).value.trim();
       const subject = `Quote request: ${types.join(', ') || 'New project'}`;
       const body = [
-        'Hi Eklavya,', '',
+        'Hi Turning Wave,', '',
         name ? `Name: ${name}` : null,
         `Looking for: ${types.join(', ') || '-'}`, '',
         msg || '(Project details)',
       ].filter((l) => l !== null).join('\n');
-      window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (e.submitter && e.submitter.value === 'email') {
+        window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      } else {
+        window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(body)}`, '_blank', 'noopener');
+      }
     });
   }
 
