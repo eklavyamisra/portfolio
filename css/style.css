@@ -506,8 +506,9 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 .pricing__note { color: var(--muted); margin-top: 24px; }
 
 /* ---------- faq ---------- */
-.faq .h2 { margin-bottom: clamp(32px, 4vw, 64px); }
-.faq__list { border-top: 1px solid var(--line); max-width: 980px; }
+.faq { display: grid; grid-template-columns: 1fr 2fr; gap: clamp(32px, 5vw, 96px); align-items: start; }
+.faq__head { position: sticky; top: clamp(88px, 10vw, 120px); }
+.faq__list { border-top: 1px solid var(--line); }
 .faq__item { border-bottom: 1px solid var(--line); }
 .faq__item summary {
   display: flex; justify-content: space-between; align-items: center; gap: 24px;
@@ -610,6 +611,8 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 
   .services__head { grid-template-columns: 1fr; }
   .services__head .h2 { justify-self: start; text-align: left; }
+  .faq { grid-template-columns: 1fr; }
+  .faq__head { position: static; }
   .service { grid-template-columns: 40px 1fr 32px; gap: 8px 16px; }
   .service__desc { grid-column: 2 / 3; }
   .service__arrow { grid-row: 1; grid-column: 3; font-size: 22px; }
