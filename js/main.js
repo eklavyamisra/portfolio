@@ -326,6 +326,8 @@
       } else {
         window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(body)}`, '_blank', 'noopener');
       }
+      // Land on the thank-you page so Google Ads can count the lead.
+      setTimeout(() => { window.location.href = '/thank-you/'; }, 800);
     });
   }
 

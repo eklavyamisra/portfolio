@@ -16,3 +16,6 @@
 
 /404.html
   X-Robots-Tag: noindex
+
+/thank-you/*
+  X-Robots-Tag: noindex
