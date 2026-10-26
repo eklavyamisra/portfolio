@@ -19,3 +19,6 @@
 
 /thank-you/*
   X-Robots-Tag: noindex
+
+/_src/*
+  X-Robots-Tag: noindex

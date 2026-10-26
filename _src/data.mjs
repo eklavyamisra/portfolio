@@ -1,0 +1,230 @@
+/* Shared site data used by build.mjs */
+
+export const SITE = {
+  url: 'https://turningwave.in',
+  email: 'hello@turningwave.in',
+  phone: '+91 90575 82885',
+  phoneRaw: '+919057582885',
+  whatsapp: '919057582885',
+  github: 'https://github.com/eklavyamisra',
+  founder: 'Eklavya Mishra',
+};
+
+export const SERVICES = [
+  {
+    slug: 'website-development',
+    name: 'Website Development',
+    short: 'Website Development',
+    summary: 'Business websites, landing pages, redesigns and custom web apps that load fast on every phone and turn visitors into enquiries.',
+  },
+  {
+    slug: 'seo-services',
+    name: 'SEO &amp; Local SEO',
+    short: 'SEO Services',
+    summary: 'Technical SEO, local SEO and Google Business Profile work that gets you found on Google Search and Maps.',
+  },
+  {
+    slug: 'ai-chatbot-automation',
+    name: 'AI Chatbots &amp; Automation',
+    short: 'AI &amp; Automation',
+    summary: 'AI chatbots for your website and WhatsApp, plus automations that remove hours of manual work every week.',
+  },
+  {
+    slug: 'branding-ui-ux-design',
+    name: 'Branding &amp; UI/UX Design',
+    short: 'Branding &amp; UI/UX',
+    summary: 'Logo design, brand identity and interfaces people enjoy using, from wireframes to polished design systems.',
+  },
+];
+
+export const WORK = [
+  {
+    name: 'Vayustaq Platform', kind: 'Startup platform', url: 'https://www.vayustaq.com', art: 'art-orbit',
+    artHtml: '<div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core">V</div>',
+    desc: 'End-to-end startup product covering architecture, auth, APIs, data workflows and integrations.',
+    tags: ['React', 'Node.js', 'MongoDB', 'JWT'],
+  },
+  {
+    name: 'AI Search Assistant', kind: 'AI product', url: 'https://perplexity-1-v3yy.onrender.com/', art: 'art-search',
+    artHtml: '<div class="search"><span class="search__icon">✦</span><span class="search__text">Ask anything<i class="caret"></i></span></div><div class="search__lines"><i></i><i></i><i></i><i></i></div>',
+    desc: 'Perplexity-style AI search assistant with conversational answers and an API-driven search pipeline.',
+    tags: ['React', 'Node.js', 'AI API'],
+  },
+  {
+    name: 'CyberFiction', kind: 'Concept · 3D motion', url: 'https://eklavyamisra.github.io/cyberfiction/', art: 'art-cyber',
+    artHtml: '<div class="floor"></div><div class="sun"></div><span class="cyber__word">CYBER<br />FICTION</span>',
+    desc: 'A 3D animated scroll experience with interactive visuals and frame-driven canvas animation.',
+    tags: ['JavaScript', 'Canvas', 'GSAP'],
+  },
+  {
+    name: 'Aperture', kind: 'Concept · Web app', url: 'https://eklavyamisra.github.io/Aperture/', art: 'art-unsplash',
+    artHtml: '<div class="masonry"><div class="masonry__col"><i></i><i></i><i></i></div><div class="masonry__col"><i></i><i></i><i></i></div><div class="masonry__col"><i></i><i></i><i></i></div></div><span class="unsplash__word">Aperture</span>',
+    desc: 'Photo discovery app with search and a responsive masonry grid, powered by the Unsplash API.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Unsplash API'],
+  },
+];
+
+export const INDUSTRIES = [
+  {
+    slug: 'salon-website-design', nav: 'Salons &amp; Spas', word: 'salon', audience: 'salon clients',
+    title: 'Salon Website Design in India | Websites for Salons & Spas | Turning Wave',
+    description: 'Salon and spa website design with online booking, service menus, price lists and WhatsApp. Mobile-first, SEO-ready. Free quote in 24h.',
+    keywords: 'salon website design, website for salon, spa website design, beauty parlour website, salon booking website India',
+    h1: 'Salon &amp; spa website design', display: 'A salon website<br />as polished as <em class="serif grad-text">your work</em>',
+    lede: 'Show off your services, prices and results, and let clients book in a couple of taps from Instagram, Google or WhatsApp.',
+    card: 'Service menus, price lists, galleries and booking that fills your chairs.',
+    problemTitle: 'Great salons lose<br /><em class="serif grad-text">bookings online</em>',
+    problem: [
+      'Most people find a salon on Google Maps or Instagram, then look for a website to check prices, see real work and book. If they can\'t find that in a few seconds, they message the next salon instead.',
+      'A focused salon website answers those questions straight away: what you offer, what it costs, what it looks like, and how to book. It also gives you a page Google can rank for searches like "hair salon near me" in your area.',
+    ],
+    features: [
+      ['Service menu &amp; prices', 'Clear, categorised services with prices and durations, easy to update when your rates change.'],
+      ['Online booking', 'A booking form or integration with your booking tool, plus a one-tap WhatsApp button.'],
+      ['Before &amp; after gallery', 'Fast-loading photo galleries that show your best work without slowing the site down.'],
+      ['Local SEO', 'Google Business Profile setup, location pages and schema so you show up in "near me" searches.'],
+      ['Offers &amp; packages', 'Bridal packages, memberships and seasonal offers in their own sections.'],
+      ['Reviews', 'Your Google reviews displayed on the site to build trust with new clients.'],
+    ],
+    faq: [
+      ['How long does it take to build a salon website?', 'Most salon and spa websites are live in 7–10 days. Sites with online booking or multiple branches take 2–3 weeks. You get a fixed quote and timeline within 24 hours of telling us what you need.'],
+      ['Can clients book appointments on my salon website?', 'Yes. We can add a booking form, connect your existing booking software, or route bookings to WhatsApp so you confirm them in the chat you already use.'],
+      ['Will my salon show up on Google Maps?', 'We set up and optimise your Google Business Profile and add local SEO to the site, which helps you appear in "salon near me" searches. Reviews and consistent details also help your ranking over time.'],
+    ],
+  },
+  {
+    slug: 'clinic-website-design', nav: 'Clinics &amp; Doctors', word: 'clinic', audience: 'patients',
+    title: 'Clinic & Doctor Website Design in India | Medical Websites | Turning Wave',
+    description: 'Website design for clinics, doctors and dentists with appointment booking, doctor profiles, treatments and local SEO. Fast, trustworthy, SEO-ready. Free quote in 24h.',
+    keywords: 'clinic website design, doctor website design, dental clinic website, medical website development India, hospital website design',
+    h1: 'Clinic &amp; doctor website design', display: 'Clinic websites that<br />earn <em class="serif grad-text">patient trust</em>',
+    lede: 'Clear treatments, doctor profiles, timings and appointment booking, presented calmly and professionally on every phone.',
+    card: 'Doctor profiles, treatments, timings and appointment booking.',
+    problemTitle: 'Patients check you<br /><em class="serif grad-text">before they call</em>',
+    problem: [
+      'Before choosing a doctor, patients search the treatment, read reviews and visit the clinic\'s website. An outdated or missing website makes even an excellent practice look uncertain.',
+      'A good clinic website explains your treatments in plain language, introduces your doctors and their qualifications, shows timings and location, and makes booking an appointment simple.',
+    ],
+    features: [
+      ['Doctor profiles', 'Qualifications, experience and specialities for each doctor, written to build confidence.'],
+      ['Treatment pages', 'A page for each key treatment, written for patients and optimised for search.'],
+      ['Appointment booking', 'A booking or callback form, WhatsApp and click-to-call for quick contact.'],
+      ['Timings &amp; location', 'OPD timings, maps, directions and parking information, always up to date.'],
+      ['Local SEO', 'Medical schema, Google Business Profile and "near me" optimisation for your area.'],
+      ['Fast &amp; accessible', 'Readable type, good contrast and quick loading, for patients of every age.'],
+    ],
+    faq: [
+      ['How long does a clinic website take?', 'A single-doctor clinic website is usually live in 7–10 days. A multi-treatment clinic with separate treatment pages and booking takes 2–3 weeks. You get a fixed quote before any work starts.'],
+      ['Can patients book appointments online?', 'Yes. We can add an appointment request form, connect your clinic management software, or send requests to WhatsApp and email.'],
+      ['Do you write content for treatment pages?', 'We help structure and write clear, patient-friendly treatment pages based on information you provide, and you approve everything medical before it goes live.'],
+    ],
+  },
+  {
+    slug: 'restaurant-website-design', nav: 'Restaurants &amp; Cafés', word: 'restaurant', audience: 'diners',
+    title: 'Restaurant & Café Website Design in India | Turning Wave',
+    description: 'Restaurant and café website design with digital menus, table reservations, online ordering links and Google Maps. Mobile-first and SEO-ready. Free quote in 24h.',
+    keywords: 'restaurant website design, cafe website design, website for restaurant, restaurant menu website, cloud kitchen website India',
+    h1: 'Restaurant &amp; café website design', display: 'Restaurant websites<br />that make people <em class="serif grad-text">hungry</em>',
+    lede: 'A mouth-watering menu, table reservations and direct ordering, so you rely less on aggregator commissions.',
+    card: 'Digital menus, reservations, ordering links and maps.',
+    problemTitle: 'Your menu lives on<br /><em class="serif grad-text">someone else\'s app</em>',
+    problem: [
+      'When your only online presence is a food delivery app, you pay commission on every order and compete with every restaurant nearby on the same screen.',
+      'Your own website gives diners a direct way to see the menu, book a table or order from you, and gives Google a page to rank for searches like "best café in [your area]".',
+    ],
+    features: [
+      ['Digital menu', 'A fast, searchable menu with photos and prices that you can update yourself, plus a QR code for tables.'],
+      ['Table reservations', 'A reservation form or WhatsApp booking, with party size and time.'],
+      ['Direct ordering', 'Links to your own ordering setup, Swiggy and Zomato, or a simple WhatsApp order flow.'],
+      ['Gallery &amp; ambience', 'Photo-led design that sells the food and the space.'],
+      ['Events &amp; offers', 'Live music nights, festival menus and happy hours in one place.'],
+      ['Local SEO', 'Google Business Profile, menu schema and location pages to win local searches.'],
+    ],
+    faq: [
+      ['Can I update the menu myself?', 'Yes. We build the menu so you can change items and prices without a developer, through a simple editor or a connected sheet.'],
+      ['Can customers order food from my website?', 'Yes. We can link to your Swiggy or Zomato pages, set up WhatsApp ordering, or build a custom ordering system for larger setups.'],
+      ['How long does a restaurant website take?', 'A restaurant or café website is usually live in 7–10 days. Multi-outlet websites and custom online ordering take longer and are scoped after a free call, with a fixed quote up front.'],
+    ],
+  },
+  {
+    slug: 'gym-website-design', nav: 'Gyms &amp; Fitness', word: 'gym', audience: 'members',
+    title: 'Gym & Fitness Website Design in India | Turning Wave',
+    description: 'Gym, yoga studio and fitness website design with membership plans, class schedules, trainer profiles and trial sign-ups. Free quote in 24h.',
+    keywords: 'gym website design, fitness website design, yoga studio website, website for gym, personal trainer website India',
+    h1: 'Gym &amp; fitness website design', display: 'Gym websites with<br /><em class="serif grad-text">real energy</em>',
+    lede: 'Membership plans, class timetables, trainer profiles and free-trial sign-ups that turn browsers into members.',
+    card: 'Plans, class schedules, trainers and free-trial sign-ups.',
+    problemTitle: 'People compare gyms<br /><em class="serif grad-text">on their phone</em>',
+    problem: [
+      'Someone looking for a gym usually compares three or four options online before visiting. They want to see the space, the plans, the timings and the trainers.',
+      'A strong gym website shows all of that in seconds and offers a free trial or consultation right away, so more of those visitors walk in.',
+    ],
+    features: [
+      ['Membership plans', 'Clear plan comparison with prices and what each includes.'],
+      ['Class schedule', 'A weekly timetable for classes like yoga, Zumba, HIIT and CrossFit.'],
+      ['Trainer profiles', 'Certifications, specialities and transformation stories.'],
+      ['Free-trial sign-up', 'A short form or WhatsApp flow to book a trial session.'],
+      ['Transformations', 'Before-and-after stories and member reviews that build belief.'],
+      ['Local SEO', 'Rank for "gym near me" with Google Business Profile and location pages.'],
+    ],
+    faq: [
+      ['How long does a gym website take?', 'A gym or fitness studio website is usually live in 7–10 days. Member logins, online payments or multiple branches are scoped after a free call, with a fixed quote up front.'],
+      ['Can members pay for memberships online?', 'Yes. We can integrate Razorpay or another payment gateway so members can buy or renew plans online.'],
+      ['Can I show my class timetable?', 'Yes. We build an easy-to-update class schedule that works well on phones.'],
+    ],
+  },
+  {
+    slug: 'coaching-institute-website', nav: 'Coaching Institutes', word: 'institute', audience: 'students',
+    title: 'Coaching Institute Website Design in India | Education Websites | Turning Wave',
+    description: 'Website design for coaching institutes, tuition centres and schools with course pages, results, enquiry forms and lead capture. Free quote in 24h.',
+    keywords: 'coaching institute website, coaching website design, tuition website, education website development India, school website design',
+    h1: 'Coaching institute website design', display: 'Coaching websites that<br />fill <em class="serif grad-text">every batch</em>',
+    lede: 'Courses, results, faculty and batch timings presented clearly, with enquiry forms that send leads straight to your counsellors.',
+    card: 'Course pages, results, faculty and lead-capturing enquiry forms.',
+    problemTitle: 'Parents research<br /><em class="serif grad-text">before they enquire</em>',
+    problem: [
+      'Students and parents compare institutes on results, faculty, fees and batch timings. Pamphlets and social posts don\'t answer those questions in one place.',
+      'A dedicated institute website puts your results and courses front and centre, ranks for course-specific searches, and captures every enquiry so your team can follow up.',
+    ],
+    features: [
+      ['Course pages', 'One page per course or exam with syllabus, duration, fees and batch timings.'],
+      ['Results &amp; toppers', 'Results sections that you can update every year.'],
+      ['Faculty profiles', 'Teacher experience and subjects to build confidence with parents.'],
+      ['Enquiry capture', 'Enquiry forms that go to email, WhatsApp or a Google Sheet for counsellors.'],
+      ['Admission campaigns', 'Landing pages for admission season and Google Ads.'],
+      ['Course SEO', 'Rank for searches like "NEET coaching in [city]" with course-level SEO.'],
+    ],
+    faq: [
+      ['How long does a coaching institute website take?', 'A single-course or tutor website is usually live in 7–10 days. Multi-course institutes with results, faculty and blog sections take 2–3 weeks. Student portals or online tests are scoped separately.'],
+      ['Can enquiries go directly to our counsellors?', 'Yes. Enquiries can be sent to email, WhatsApp or a shared Google Sheet, and we can automate follow-up messages.'],
+      ['Can you build landing pages for admission ads?', 'Yes. We build fast landing pages for Google and Meta ads with conversion tracking set up.'],
+    ],
+  },
+  {
+    slug: 'real-estate-website-design', nav: 'Real Estate', word: 'real estate business', audience: 'buyers',
+    title: 'Real Estate Website Design in India | Property Websites | Turning Wave',
+    description: 'Real estate website design for builders, agents and brokers with property listings, project pages, enquiry capture and SEO. Free quote in 24h.',
+    keywords: 'real estate website design, property website development, website for real estate agent, builder website design India, property listing website',
+    h1: 'Real estate website design', display: 'Property websites<br />that bring <em class="serif grad-text">site visits</em>',
+    lede: 'Project pages, property listings, floor plans and enquiry capture that turn ad clicks into qualified leads.',
+    card: 'Listings, project pages, floor plans and lead capture.',
+    problemTitle: 'Expensive ad clicks<br /><em class="serif grad-text">land nowhere</em>',
+    problem: [
+      'Real estate leads are expensive. When ads send buyers to a slow page or a generic listing portal, many of those clicks never turn into enquiries.',
+      'A fast project website with clear pricing, floor plans, amenities and location gives buyers what they need and captures their details for your sales team.',
+    ],
+    features: [
+      ['Project pages', 'Dedicated pages for each project with amenities, floor plans and location advantages.'],
+      ['Property listings', 'Filterable listings for agents and brokers, by location, budget and type.'],
+      ['Lead capture', 'Enquiry and brochure-download forms that go straight to your CRM, sheet or WhatsApp.'],
+      ['Ad landing pages', 'High-converting pages for Google and Meta campaigns, with tracking.'],
+      ['RERA &amp; trust', 'RERA numbers, approvals and builder credentials displayed clearly.'],
+      ['Local SEO', 'Rank for "flats in [area]" and project-name searches.'],
+    ],
+    faq: [
+      ['How long does a real estate website take?', 'A single-project or agent website is usually live in 7–10 days and a multi-project builder site in 2–3 weeks. Full property listing portals are scoped after a free call, with a fixed quote up front.'],
+      ['Can leads go directly into our CRM?', 'Yes. We can connect enquiry forms to your CRM, a Google Sheet, email or WhatsApp, and automate follow-ups.'],
+      ['Can you build landing pages for property ads?', 'Yes. We build fast, focused landing pages for each project with conversion tracking for Google and Meta ads.'],
+    ],
+  },
+];

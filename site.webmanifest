@@ -1,11 +1,11 @@
 {
   "name": "Turning Wave",
   "short_name": "Turning Wave",
-  "description": "Websites, SEO and AI automation that win customers.",
+  "description": "Website development, SEO and AI automation company in India.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a1220",
-  "theme_color": "#0a1220",
+  "background_color": "#04070d",
+  "theme_color": "#04070d",
   "icons": [
     {
       "src": "/assets/seo/icon-192.png",
