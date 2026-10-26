@@ -4,8 +4,8 @@
   "description": "Websites, SEO and AI automation that win customers.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0b0a",
-  "theme_color": "#0b0b0a",
+  "background_color": "#0a1220",
+  "theme_color": "#0a1220",
   "icons": [
     {
       "src": "/assets/seo/icon-192.png",

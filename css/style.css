@@ -3,17 +3,17 @@
    ========================================================= */
 
 :root {
-  --bg: #0b0b0a;
-  --bg-2: #141412;
-  --fg: #efece4;
-  --muted: #8b8880;
-  --line: rgba(239, 236, 228, 0.14);
-  --accent: #ff4d1a;
-  --accent-ink: #0b0b0a;
-  --paper: #efece4;
-  --ink: #0b0b0a;
-  --ink-muted: #5d5b55;
-  --ink-line: rgba(11, 11, 10, 0.16);
+  --bg: #0a1220;
+  --bg-2: #111b2e;
+  --fg: #e8edf5;
+  --muted: #8a96a8;
+  --line: rgba(232, 237, 245, 0.14);
+  --accent: #4d8dff;
+  --accent-ink: #0a1220;
+  --paper: #eef2f8;
+  --ink: #0a1220;
+  --ink-muted: #556275;
+  --ink-line: rgba(10, 18, 32, 0.16);
 
   --f-display: "Syne", "Arial Black", sans-serif;
   --f-serif: "Instrument Serif", Georgia, serif;
@@ -109,7 +109,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
   align-self: flex-end;
 }
 .loader__count sup { font-size: 0.25em; vertical-align: top; margin-left: 0.05em; }
-.loader__bar { width: min(40vw, 320px); height: 2px; background: rgba(11,11,10,.2); overflow: hidden; }
+.loader__bar { width: min(40vw, 320px); height: 2px; background: rgba(10, 18, 32,.2); overflow: hidden; }
 .loader__bar i { display: block; height: 100%; width: 100%; background: var(--accent-ink); transform: scaleX(0); transform-origin: left; }
 
 /* ---------- cursor ---------- */
@@ -150,7 +150,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 .menu-open .nav { mix-blend-mode: normal; color: var(--accent-ink); }
 .nav__logo { font-family: var(--f-display); font-weight: 800; font-size: 19px; letter-spacing: -0.04em; display: inline-flex; align-items: center; white-space: nowrap; }
 .nav__logo span { font-size: 0.6em; align-self: flex-start; margin-top: -0.1em; }
-.nav__mark { width: 1.05em; height: 1.05em; margin-right: 0.38em; flex: none; }
+.nav__mark { width: 2.1em; height: 1.13em; margin-right: 0.45em; flex: none; }
 .nav__status { display: flex; align-items: center; gap: 10px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: #3cff7a; box-shadow: 0 0 0 0 rgba(60,255,122,.6); animation: pulse 2s infinite; }
 @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(60,255,122,0); } 100% { box-shadow: 0 0 0 0 rgba(60,255,122,0); } }
@@ -188,7 +188,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
   display: flex; align-items: flex-start; gap: 12px;
   font-family: var(--f-display); font-weight: 700; text-transform: uppercase;
   font-size: clamp(31px, 9.2vw, 63px); line-height: 1; letter-spacing: -0.04em;
-  border-bottom: 1px solid rgba(11,11,10,.2); padding: 8px 0;
+  border-bottom: 1px solid rgba(10, 18, 32,.2); padding: 8px 0;
 }
 .menu__links .mono { margin-top: 10px; }
 .menu__foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
@@ -239,7 +239,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
   position: absolute; top: 0; left: 0; z-index: -1;
   width: 60vw; height: 60vw; max-width: 900px; max-height: 900px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,77,26,.55), rgba(255,77,26,.12) 45%, transparent 70%);
+  background: radial-gradient(circle at 30% 30%, rgba(77, 141, 255,.55), rgba(77, 141, 255,.12) 45%, transparent 70%);
   filter: blur(40px);
   transform: translate(40vw, -10vh);
   pointer-events: none;
@@ -357,7 +357,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 @media (hover: hover) {
   .service:hover { color: var(--paper); padding-left: 24px; padding-right: 24px; }
   .service:hover::before { transform: scaleY(1); transform-origin: top; }
-  .service:hover .service__num, .service:hover .service__desc { color: #b9b6ad; }
+  .service:hover .service__num, .service:hover .service__desc { color: #aab4c3; }
   .service:hover .service__arrow { transform: rotate(45deg); color: var(--accent); }
 }
 
@@ -399,11 +399,11 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 .tags li { font-family: var(--f-mono); font-size: 10px; text-transform: uppercase; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; }
 
 /* card art: orbit */
-.art-orbit { background: radial-gradient(circle at 50% 50%, #2a1206, #0f0f0d 70%); display: grid; place-items: center; }
-.art-orbit .ring { position: absolute; border: 1px solid rgba(255,77,26,.45); border-radius: 50%; }
+.art-orbit { background: radial-gradient(circle at 50% 50%, #0c1f3d, #0b1322 70%); display: grid; place-items: center; }
+.art-orbit .ring { position: absolute; border: 1px solid rgba(77, 141, 255,.45); border-radius: 50%; }
 .art-orbit .r1 { width: 36%; aspect-ratio: 1; animation: spin 10s linear infinite; }
 .art-orbit .r2 { width: 58%; aspect-ratio: 1; border-style: dashed; animation: spin 18s linear infinite reverse; }
-.art-orbit .r3 { width: 82%; aspect-ratio: 1; border-color: rgba(239,236,228,.12); animation: spin 30s linear infinite; }
+.art-orbit .r3 { width: 82%; aspect-ratio: 1; border-color: rgba(232, 237, 245,.12); animation: spin 30s linear infinite; }
 .art-orbit .ring::after { content: ""; position: absolute; top: -5px; left: 50%; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 20px var(--accent); }
 .art-orbit .r3::after { background: var(--fg); box-shadow: none; width: 6px; height: 6px; top: -3px; }
 .art-orbit .core { position: relative; font-family: var(--f-display); font-weight: 800; font-size: clamp(31px, 3.9vw, 63px); color: var(--accent); letter-spacing: -0.05em; }
@@ -570,7 +570,7 @@ section { position: relative; padding: clamp(56px, 7.5vw, 112px) var(--gutter); 
 .footer__big {
   font-family: var(--f-display); font-weight: 800; text-transform: uppercase;
   font-size: 9vw; line-height: 0.8; letter-spacing: -0.06em;
-  color: var(--bg-2); -webkit-text-stroke: 1px rgba(239,236,228,.12);
+  color: var(--bg-2); -webkit-text-stroke: 1px rgba(232, 237, 245,.12);
   margin: 0 0 24px -0.04em; white-space: nowrap;
 }
 .footer__big .serif { text-transform: none; color: var(--accent); -webkit-text-stroke: 0; font-size: 0.5em; vertical-align: top; }
