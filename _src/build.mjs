@@ -53,6 +53,7 @@ function header(path) {
   <div class="menu__foot mono">
     <a href="mailto:${SITE.email}">${SITE.email}</a>
     <a href="tel:${SITE.phoneRaw}">${SITE.phone}</a>
+    <a href="tel:${SITE.phone2Raw}">${SITE.phone2}</a>
     <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener">WhatsApp ↗</a>
   </div>
 </div>`;
@@ -95,6 +96,7 @@ const BLOCKS = {
     <div class="cta__direct">
       <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" class="link-roll"><span data-text="WhatsApp ↗">WhatsApp ↗</span></a>
       <a href="tel:${SITE.phoneRaw}" class="link-roll"><span data-text="${SITE.phone}">${SITE.phone}</span></a>
+      <a href="tel:${SITE.phone2Raw}" class="link-roll"><span data-text="${SITE.phone2}">${SITE.phone2}</span></a>
       <a href="mailto:${SITE.email}" class="link-roll"><span data-text="${SITE.email}">${SITE.email}</span></a>
     </div>
   </div>
@@ -220,7 +222,7 @@ function schema(m) {
     image: SITE.url + '/assets/seo/og-image.png',
     description: 'Website development, SEO and AI automation company in India building fast websites, web apps and AI tools for businesses and startups.',
     email: SITE.email,
-    telephone: '+91-9057582885',
+    telephone: ['+91-9057582885', '+91-9950696939'],
     address: { '@type': 'PostalAddress', addressCountry: 'IN' },
     areaServed: [{ '@type': 'Country', name: 'India' }, 'Worldwide'],
     founder: { '@id': SITE.url + '/about/#founder' },

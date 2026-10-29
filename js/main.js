@@ -211,6 +211,7 @@
     if (!sect) return;
     const reelTrack = qs('.reel__track', sect);
     const distance = () => reelTrack.scrollWidth - window.innerWidth;
+    if (distance() <= 0) return;
     gsap.to(reelTrack, {
       x: () => -distance(), ease: 'none',
       scrollTrigger: {

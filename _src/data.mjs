@@ -5,6 +5,8 @@ export const SITE = {
   email: 'hello@turningwave.in',
   phone: '+91 90575 82885',
   phoneRaw: '+919057582885',
+  phone2: '+91 99506 96939',
+  phone2Raw: '+919950696939',
   whatsapp: '919057582885',
   github: 'https://github.com/eklavyamisra',
   founder: 'Eklavya Mishra',
